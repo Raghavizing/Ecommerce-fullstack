@@ -1,0 +1,32 @@
+.old_price{
+    color:grey;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.new_price{
+    color:red;
+    font-size: 24px;
+    font-weight: 600;
+}
+.category{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.tags{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.category span{
+    font-weight: 600;
+}
+.tags span{
+    font-weight: 600;
+}
+.sizeBtn:hover{
+    background-color: black;
+    color: white;
+}
+.activeSize{
+    background-color: black;
+    color: white;
+}

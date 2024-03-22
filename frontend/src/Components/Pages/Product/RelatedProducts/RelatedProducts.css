@@ -1,0 +1,10 @@
+.related-products{
+    padding: 5%;
+}
+.line{
+    width: 15%;
+    opacity: 1;
+    height: 6px;
+    background-color: black;
+    border-radius: 10px;
+}

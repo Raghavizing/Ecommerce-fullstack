@@ -1,0 +1,37 @@
+.navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.navlink {
+    border-bottom: 4px transparent;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.navlink:hover {
+    color: red;
+    border-bottom: 4px solid red;
+}
+
+.logoText {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.navlogo {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    color: red;
+    border-bottom: 4px solid red;
+}
+.cart-img{
+    height: 30px;
+}

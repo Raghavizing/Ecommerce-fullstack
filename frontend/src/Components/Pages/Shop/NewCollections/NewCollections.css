@@ -1,0 +1,18 @@
+.new{
+    padding: 5% 10%;
+}
+.new-heading{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.new-heading-line{
+    background-color: black;
+    opacity: 1;
+    width: 15%;
+    height: 6px;
+    border-radius: 10px;
+}
+.new-item{
+    margin-top: 50px;
+}

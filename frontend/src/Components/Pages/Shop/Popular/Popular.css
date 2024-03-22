@@ -1,0 +1,18 @@
+.popular{
+    padding: 5% 10%;
+}
+.popular-heading{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.popular-heading-line{
+    background-color: black;
+    opacity: 1;
+    width: 15%;
+    height: 6px;
+    border-radius: 10px;
+}
+.popular-item{
+    margin-top: 50px;
+}

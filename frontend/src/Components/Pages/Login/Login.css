@@ -1,0 +1,8 @@
+.login-page{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    padding: 5% 30%;
+}
+.login-body{
+    background-color: white;
+    padding: 20% 5%;
+}

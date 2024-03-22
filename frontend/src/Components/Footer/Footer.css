@@ -1,0 +1,12 @@
+
+.footer-line{
+    width: 75%;
+    height: 3px;
+    background-color: black;
+}
+.footer-links{
+    list-style: none;
+}
+.footer-links li{
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.offers-banner {
+    height: 60vh;
+    margin: 5% 0;
+    padding: 0 5%;
+    width: 75%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.text-line1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.text-line2 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.text-line3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.offers-image-section {
+    height: 100%;
+}
+.offers-image {
+    height: 100%;
+}

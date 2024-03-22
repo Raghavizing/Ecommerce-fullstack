@@ -1,0 +1,13 @@
+.addProduct-page{
+    padding: 5% 10%;
+}
+.addProduct-form {
+    padding: 10% 15%;
+}
+.addProduct-form .form-label{
+    color: #8D8D8D;
+    font-size: 16px;
+}
+.upload-img{
+    height: 150px;
+}

@@ -1,0 +1,20 @@
+.newsletter {
+    height: 60vh;
+    margin: 5% 0;
+    padding: 8%;
+    width: 75%;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+.newsletter-form{
+    width: 75%;
+    margin-top: 5%;
+}
+.newsletter-text1{
+    text-transform: capitalize;
+    font-size: 55px;
+    font-weight: 600;
+}
+.newsletter-text2{
+    text-transform: capitalize;
+    font-size: 20px;
+}
