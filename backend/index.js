@@ -118,6 +118,12 @@ app.get("/popularProducts", async (req, res) => {
     console.log("Popular products fetched.")
     res.send(popularProducts);
 })
+app.get("/newCollection", async (req, res) => {
+    const products = await Product.find({});
+    const newCollection = products.slice(-8);
+    console.log("New Collection fetched.")
+    res.send(newCollection);
+})
 
 //Frontend APIs
 const Users = mongoose.model("Users", {

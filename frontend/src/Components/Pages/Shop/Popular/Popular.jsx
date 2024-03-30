@@ -1,9 +1,16 @@
-import React,{useContext} from 'react'
+import React,{useEffect,useState} from 'react'
 import Item from '../../../Item/Item'
 import "./Popular.css"
-import { ShopContext } from '../../../Context/ShopContext';
 function Popular() {
-    const{popular_products} = useContext(ShopContext);
+    const [popular_products, set_popular] = useState([])
+    useEffect(() => {
+        fetchData();
+    }, [])
+    async function fetchData() {
+        await fetch('http://localhost:4000/popularProducts', {
+            method: "GET"
+        }).then((res) => res.json()).then((data) => set_popular(data))
+    }
     return (
         <div className='popular'>
             <h1 className='popular-heading text-center'>popular in women</h1>
