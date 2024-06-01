@@ -1,20 +1,63 @@
 .newsletter {
-    height: 60vh;
+    height: auto;
     margin: 5% 0;
     padding: 8%;
     width: 75%;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
-.newsletter-form{
-    width: 75%;
+
+.newsletter-form {
+    width: 100%;
     margin-top: 5%;
 }
-.newsletter-text1{
+
+.newsletter-text1 {
     text-transform: capitalize;
-    font-size: 55px;
+    font-size: 2.5rem; /* Responsive font size */
     font-weight: 600;
 }
-.newsletter-text2{
+
+.newsletter-text2 {
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 1.25rem; /* Responsive font size */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .newsletter-text1 {
+        font-size: 2rem; /* Adjust font size for tablets */
+    }
+
+    .newsletter-text2 {
+        font-size: 1rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .newsletter-text1 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .newsletter-text2 {
+        font-size: 0.875rem; /* Adjust font size for mobile */
+    }
+
+    .newsletter-form {
+        flex-direction: column; /* Stack form elements vertically on small screens */
+    }
+
+    .form-control, .btn {
+        width: 100%; /* Full width form elements on small screens */
+        margin: 5px 0; /* Margin between form elements */
+    }
 }

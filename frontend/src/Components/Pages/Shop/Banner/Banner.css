@@ -1,29 +1,75 @@
-.banner{
-    height: 100vh;
+.banner {
+    height: 90vh;
     width: 100%;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
     margin: 0;
+    display: flex;
+    align-items: center;
 }
-.banner-image-section{
+
+.banner-image-section {
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.banner-image{
-    height: 75%;
+
+.banner-image {
+    max-height: 75%;
+    width: auto;
 }
-.banner-text-section{
+
+.banner-text-section {
     height: 100%;
     padding: 5% 10%;
 }
-.banner-text1{
+
+.banner-text1 {
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 500;
 }
-.banner-text2{
-    font-size: 100px;
+
+.banner-text2 {
+    font-size: 60px;
     font-weight: 600;
     line-height: normal;
 }
-.handEmoji{
-    height: 100px;
+
+.handEmoji {
+    height: 50px;
+}
+
+@media (max-width: 992px) {
+    .banner {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .banner-text-section {
+        padding: 5%;
+    }
+
+    .banner-text2 {
+        font-size: 50px;
+    }
+
+    .handEmoji {
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-text2 {
+        font-size: 40px;
+    }
+
+    .handEmoji {
+        height: 30px;
+    }
+
+    .banner-text-section {
+        padding: 2%;
+    }
 }

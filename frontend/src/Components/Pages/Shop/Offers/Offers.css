@@ -1,28 +1,71 @@
 .offers-banner {
-    height: 60vh;
+    height: auto;
     margin: 5% 0;
-    padding: 0 5%;
+    padding: 5%;
     width: 75%;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 
-.text-line1 {
-    font-size: 80px;
-    font-weight: 600;
-}
-
+.text-line1,
 .text-line2 {
-    font-size: 80px;
+    font-size: 3rem;
     font-weight: 600;
 }
 
 .text-line3 {
-    font-size: 22px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
+
 .offers-image-section {
-    height: 100%;
+    height: auto;
 }
+
 .offers-image {
-    height: 100%;
+    max-height: 100%;
+    width: auto;
+}
+
+@media (max-width: 992px) {
+    .offers-banner {
+        width: 90%;
+    }
+
+    .text-line1,
+    .text-line2 {
+        font-size: 2.5rem;
+    }
+
+    .text-line3 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    .offers-banner {
+        width: 100%;
+        padding: 2%;
+    }
+
+    .text-line1,
+    .text-line2 {
+        font-size: 2rem;
+    }
+
+    .text-line3 {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .offers-text-section,
+    .offers-image-section {
+        text-align: center;
+    }
 }

@@ -1,39 +1,40 @@
-import React from 'react'
-import "./Footer.css"
-import logo from "../Assets/logo_big.png"
-import instagram from "../Assets/instagram_icon.png"
-import pinterest from "../Assets/pintester_icon.png"
-import whatsapp from "../Assets/whatsapp_icon.png"
+import React from 'react';
+import "./Footer.css";
+import logo from "../Assets/logo_big.png";
+import instagram from "../Assets/instagram_icon.png";
+import pinterest from "../Assets/pintester_icon.png";
+import whatsapp from "../Assets/whatsapp_icon.png";
+
 function Footer() {
     let year = new Date().getFullYear();
     return (
-        <div className='footer text-center mb-5'>
-            <div className='footer-logo d-flex justify-content-center my-4'>
-                <img src={logo} alt="" />
-                <h1 className='my-auto'>Shopper</h1>
+        <div className="footer text-center mb-5">
+            <div className="footer-logo d-flex justify-content-center align-items-center my-4">
+                <img src={logo} alt="Shopper Logo" />
+                <h1 className="my-auto">Shopper</h1>
             </div>
-            <ul className='footer-links d-flex justify-content-center my-4'>
-                <li className='mx-3'>Company</li>
-                <li className='mx-3'>Products</li>
-                <li className='mx-3'>Offices</li>
-                <li className='mx-3'>About</li>
-                <li className='mx-3'>Contact</li>
+            <ul className="footer-links d-flex justify-content-center flex-wrap my-4">
+                <li className="mx-3">Company</li>
+                <li className="mx-3">Products</li>
+                <li className="mx-3">Offices</li>
+                <li className="mx-3">About</li>
+                <li className="mx-3">Contact</li>
             </ul>
-            <div className='social-logo d-flex justify-content-center my-4'>
-                <div className='social-container mx-2'>
-                    <img src={instagram} alt="" />
+            <div className="social-logo d-flex justify-content-center my-4">
+                <div className="social-container mx-2">
+                    <img src={instagram} alt="Instagram" />
                 </div>
-                <div className='social-container mx-2'>
-                    <img src={pinterest} alt="" />
+                <div className="social-container mx-2">
+                    <img src={pinterest} alt="Pinterest" />
                 </div>
-                <div className='social-container mx-2'>
-                    <img src={whatsapp} alt="" />
+                <div className="social-container mx-2">
+                    <img src={whatsapp} alt="WhatsApp" />
                 </div>
             </div>
-            <hr className='footer-line mx-auto my-4' />
-                <p>Copyright @ {year} - All Rights Reserved</p>
+            <hr className="footer-line mx-auto my-4" />
+            <p>Copyright @ {year} - All Rights Reserved</p>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;

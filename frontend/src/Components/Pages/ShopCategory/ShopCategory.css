@@ -1,13 +1,54 @@
-.shopCategory-banner-container{
+.shopCategory-banner-container {
     width: 100%;
-    margin: 30px 0;
+    margin-bottom: 2rem;
 }
-.shopCategory-banner{
-    width: 85%;
+
+.shopCategory-banner {
+    width: 100%;
+    height: auto;
 }
-.shopCategory-items{
-    width: 85%;
+
+.shopCategoryIndex {
+    font-size: 1rem;
 }
-.shopCategoryIndex span{
-    font-weight: 600;
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn img {
+    width: 10px;
+    height: 10px;
+}
+
+@media (max-width: 768px) {
+    .shopCategoryIndex {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+    }
+
+    .btn img {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .shopCategoryIndex {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        font-size: 0.75rem;
+    }
+
+    .btn img {
+        width: 6px;
+        height: 6px;
+    }
 }
