@@ -24,7 +24,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/ecommerce-mern.git
+   git clone https://github.com/Raghavizing/Ecommerce-fullstack.git
    ```
 2. Install dependencies for the frontend and backend:
    ```
