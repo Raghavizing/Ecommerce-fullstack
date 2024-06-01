@@ -23,24 +23,24 @@ app.listen(port, (error) => {
 app.get("/", (req, res) => {
     res.send("Express App Is Running");
 })
-//Image Storage Engine
-const storage = multer.diskStorage({
-    destination: './Uploads/Images',
-    filename: function (req, file, cb) {
-        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
-    }
-})
+// //Image Storage Engine (Vercel Server is read-only hence doesnt support storing files)
+// const storage = multer.diskStorage({
+//     destination: './Uploads/Images',
+//     filename: function (req, file, cb) {
+//         cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname))
+//     }
+// })
 
-const upload = multer({ storage: storage })
+// const upload = multer({ storage: storage })
 
-app.use("/Images", express.static("./Uploads/Images"))
+// app.use("/Images", express.static("./Uploads/Images"))
 
-app.post("/upload", upload.single('product'), (req, res) => {
-    res.send({
-        success: 1,
-        imgUrl: `http://localhost:${port}/Images/${req.file.filename}`
-    })
-})
+// app.post("/upload", upload.single('product'), (req, res) => {
+//     res.send({
+//         success: 1,
+//         imgUrl: `http://localhost:${port}/Images/${req.file.filename}`
+//     })
+// })
 
 const Product = mongoose.model("Product", {
     id: {
