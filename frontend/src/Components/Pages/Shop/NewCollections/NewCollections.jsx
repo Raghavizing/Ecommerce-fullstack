@@ -7,7 +7,7 @@ function NewCollections() {
         fetchData();
     }, [])
     async function fetchData() {
-        await fetch('http://localhost:4000/newCollection', {
+        await fetch('https://ecommerce-backend-pink-mu.vercel.app/newCollection', {
             method: "GET"
         }).then((res) => res.json()).then((data) => set_newCollection(data))
     }

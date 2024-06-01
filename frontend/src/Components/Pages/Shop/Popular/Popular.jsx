@@ -7,7 +7,7 @@ function Popular() {
         fetchData();
     }, [])
     async function fetchData() {
-        await fetch('http://localhost:4000/popularProducts', {
+        await fetch('https://ecommerce-backend-pink-mu.vercel.app/popularProducts', {
             method: "GET"
         }).then((res) => res.json()).then((data) => set_popular(data))
     }

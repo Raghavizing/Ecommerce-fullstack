@@ -23,7 +23,7 @@ function Login() {
       password:details.password
     }
     let response;
-    await fetch('http://localhost:4000/login',{
+    await fetch('https://ecommerce-backend-pink-mu.vercel.app/login',{
       method:"Post",
       headers:{
         Accept:'application/json',

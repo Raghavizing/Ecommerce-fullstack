@@ -25,7 +25,7 @@ function SignUp() {
       password: details.password,
     }
     let response;
-    await fetch('http://localhost:4000/signup', {
+    await fetch('https://ecommerce-backend-pink-mu.vercel.app/signup', {
       method: "POST",
       headers: {
         Accept: "application/json",

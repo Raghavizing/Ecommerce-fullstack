@@ -14,7 +14,7 @@ const ShopContextProvider = (props) => {
         fetchData();
     }, [])
     async function fetchData() {
-        await fetch('http://localhost:4000/allProducts', {
+        await fetch('https://ecommerce-backend-pink-mu.vercel.app/allProducts', {
             method: "GET"
         }).then((res) => res.json()).then((data) => set_products(data))
     }
